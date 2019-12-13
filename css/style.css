@@ -325,7 +325,7 @@ a,a:hover {
         font-size: 6px;
         }
     .left .hero-info {
-        right: 20%;
+        left: 10%;
     }
     .left .hero-info .title, .left .hero-info .text{
         width: 100%;
