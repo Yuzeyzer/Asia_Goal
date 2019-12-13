@@ -321,11 +321,11 @@ a,a:hover {
         html {
         font-size: 6px;
         }
-    .left .hero-info .title {
+    .left .hero-info {
         right: 10%;
         width: 70%;
     }
-    .right .hero-info .title {
+    .right .hero-info {
         width: 70%;
     }
     .left .png-img {
