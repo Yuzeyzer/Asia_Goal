@@ -254,7 +254,7 @@ a,a:hover {
     position: absolute;
     top: 40%;
     left: 5%;
-    transform: translateY(-40%) ;
+    transform: translateY(-40%);
     z-index: 2;
 }
 .right .hero-info .title {
@@ -309,7 +309,7 @@ a,a:hover {
         font-size: 6px;
     }
     .header .nav .logo {
-        width: 30%;
+        width: 50%;
     }
     .header .nav .menu-list {
         display: none;
@@ -326,12 +326,15 @@ a,a:hover {
         }
     .left .hero-info {
         left: 10%;
+        transform: translateX(0) translateY(-40%);
     }
     .left .hero-info .title, .left .hero-info .text{
         width: 100%;
     }
     .right .hero-info {
-
+        top: 30%;
+        left: 10%;
+        transform: translateY(-40%) ;
     }
     .left .png-img {
         right: 40%;
@@ -339,7 +342,7 @@ a,a:hover {
         width: 65%;
     }
     .right .png-img {
-        top: 60%;
+        top: 55%;
         width: 70%;
     }
 }
