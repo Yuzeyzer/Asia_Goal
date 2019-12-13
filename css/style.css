@@ -321,6 +321,12 @@ a,a:hover {
         html {
         font-size: 6px;
         }
+    .left .png-img {
+        top: 50%;
+    }
+    .right .png-img {
+        top: 50%;
+    }
 }
 @media screen and (max-width: 375px)
 {
