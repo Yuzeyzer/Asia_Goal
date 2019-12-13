@@ -24,6 +24,15 @@
     </nav>
 </header>
 <section id="hero" class="flex">
+    <div class="menu-click">
+        <ul class="menu-list flex column align-nd-justify">
+            <li class="list-items"><a href="#" class="items-btn" style="color: black">Клуб</a></li>
+            <li class="list-items"><a href="#" class="items-btn" style="color: black">Информационный центр</a></li>
+            <li class="list-items"><a href="#" class="items-btn scale-fff">Стать частью клуба</a></li>
+            <li class="list-items"><a href="#" class="items-btn scale-fff">Медиа</a></li>
+            <li class="list-items"><a href="#" class="items-btn scale-fff">Магазин</a></li>
+        </ul>
+    </div>
     <div class="left">
                 <div class="png-img">
                     <img src="./images/1.png" alt="">
@@ -66,7 +75,8 @@
 <script>
     $(document).ready(function () {
         $('.burger-menu').on('click', function () {
-            $('.menu-btn').toggleClass('menu-btn-active')
+            $('.menu-btn').toggleClass('menu-btn-active');
+            $('.menu-click').toggleClass('menu-click-active');
         })
     })
 </script>

@@ -127,12 +127,31 @@ a,a:hover {
 
 
 
-
-
-
-
-
-
+.menu-click {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: #972426;
+    transition: 0.6s;
+    z-index: 3;
+}
+.menu-click-active {
+    transform: translateX(0);
+}
+.menu-click .menu-list {
+    height: 100%;
+}
+.menu-click .menu-list .list-items {
+    margin-top: 4rem;
+}
+.menu-click .menu-list .list-items .items-btn {
+    color: #fff!important;
+    font-size: 2.2rem;
+}
+.menu-click-active .menu-list .list-items .items-btn:before,.menu-click-active .menu-list .list-items .items-btn:after {
+    background-color: #fff;
+}
 #hero {
     height: 100vh;
     width: 100%;
@@ -255,7 +274,6 @@ a,a:hover {
     top: 40%;
     left: 5%;
     transform: translateY(-40%);
-    z-index: 2;
 }
 .right .hero-info .title {
     text-transform: uppercase;
@@ -270,7 +288,7 @@ a,a:hover {
     position: absolute;
     top: 25%;
     transform: translateY(-25%);
-    right: 0;
+    right: 1%;
     height: 50%;
     width: 10%;
 }
@@ -311,11 +329,27 @@ a,a:hover {
     justify-content: center;
     align-items: center;
     background-color:#323d75;
-    height: 7rem;
-    width: 7rem;
+    height: 10rem;
+    width: 10rem;
     cursor: pointer;
     border-radius: 50%;
     z-index: 3;
+    box-shadow: 0 0 1rem 1rem rgba(50,61,117,1);
+    animation: bouncing 1.2s linear infinite;
+}
+@keyframes bouncing {
+    0% {
+        box-shadow: 0 0 1rem 1rem rgba(193,47,42,0.5);
+    }
+    20% {
+        box-shadow: 0 0 1rem 1rem rgba(50,61,117,0.7);
+    }
+    40% {
+        box-shadow: 0 0 1rem 1rem rgba(50,61,117,0.9);
+    }
+    60% {
+        box-shadow: 0 0 1rem 1rem rgba(50,61,117,0.7);
+    }
 }
 .menu-btn {
     position: relative;
@@ -327,7 +361,7 @@ a,a:hover {
 .menu-btn span:after {
     position: absolute;
     margin-top: -1px;
-    margin-left: -1.1rem;
+    margin-left: -1.6rem;
     top:50%;
     left:50%;
     width: 33%;
