@@ -324,6 +324,9 @@ a,a:hover {
     .left .hero-info {
         right: 20%;
     }
+    .left .hero-info .title, .left .hero-info .text{
+        width: 100%;
+    }
     .right .hero-info {
 
     }
