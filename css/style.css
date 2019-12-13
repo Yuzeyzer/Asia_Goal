@@ -322,11 +322,10 @@ a,a:hover {
         font-size: 6px;
         }
     .left .hero-info {
-        right: 10%;
-        width: 70%;
+        right: 20%;
     }
     .right .hero-info {
-        width: 70%;
+
     }
     .left .png-img {
         right: 40%;
