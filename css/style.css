@@ -321,11 +321,19 @@ a,a:hover {
         html {
         font-size: 6px;
         }
+    .left .hero-info .title {
+        width: 70%;
+    }
+    .right .hero-info .title {
+        width: 70%;
+    }
     .left .png-img {
-        top: 50%;
+        top: 60%;
+        width: 65%;
     }
     .right .png-img {
-        top: 50%;
+        top: 60%;
+        width: 65%;
     }
 }
 @media screen and (max-width: 375px)
