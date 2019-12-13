@@ -289,9 +289,11 @@ a,a:hover {
 
 @media screen and (max-width: 860px){
         html {
-        font-size: 5px;
+        font-size: 6px;
         }
-    
+        .header .nav .logo {
+        width: 30%;
+        }
         .header .nav .menu-list {
             display: none;
         }
