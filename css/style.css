@@ -287,8 +287,9 @@ a,a:hover {
 }
 
 
-@media screen and (max-width: 360px){
-        .menu-list {
+@media screen and (max-width: 860px){
+
+        .header .nav .menu-list {
             display: none;
         }
 }
