@@ -60,7 +60,7 @@ a,a:hover {
     max-width: 100%;
 }
 .menu-list {
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 .menu-list .list-items {
     margin-left: 5.5rem;
@@ -155,18 +155,18 @@ a,a:hover {
 .left .hero-info {
     position: absolute;
     top: 40%;
-    right: 0;
+    right: 5%;
     transform: translateY(-40%) translateX(53%);
     z-index: 2;
+    height: 60%;
 }
 .left .title {
     text-transform: uppercase;
     font-family: "Roboto condensed",sans-serif;
     letter-spacing: 1rem;
     font-size: 4rem ;
-    height: 10rem;
+    width: 50%;
     color: black;
-    width: 100%;
     z-index: 2;
 }
 .left .title .fff {
@@ -217,8 +217,8 @@ a,a:hover {
     top: 30%;
     left: 50%;
     transform: translateX(-40%) translateY(-50%);
-    width: 4px;
-    height: 30px;
+    width: 0.4rem;
+    height: 3rem;
     background-color: black;
     animation: arrowDownbefore 1.2s running infinite;
 }
@@ -249,6 +249,22 @@ a,a:hover {
 }
 .right .png-img img {
     max-width: 100%;
+}
+.right .hero-info {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translateY(-40%) ;
+    z-index: 2;
+}
+.right .hero-info .title {
+    text-transform: uppercase;
+    font-family: "Roboto condensed",sans-serif;
+    letter-spacing: 1rem;
+    font-size: 4rem ;
+    width: 50%;
+    color: #fff;
+    z-index: 2;
 }
 .right .social-media {
     position: absolute;
@@ -288,7 +304,7 @@ a,a:hover {
 }
 
 
-@media screen and (max-width: 998px){
+@media screen and (max-width: 1024px){
     html {
         font-size: 6px;
     }
@@ -298,6 +314,7 @@ a,a:hover {
     .header .nav .menu-list {
         display: none;
     }
+
 }
 @media screen and (max-width: 860px)
 {
