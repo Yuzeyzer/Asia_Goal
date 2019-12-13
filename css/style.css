@@ -303,19 +303,77 @@ a,a:hover {
     background-color: #c12a2f;
 }
 
-
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    justify-content: center;
+    align-items: center;
+    background-color:#323d75;
+    height: 7rem;
+    width: 7rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3;
+}
+.menu-btn {
+    position: relative;
+    height:100%;
+    width: 100%;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -1.1rem;
+    top:50%;
+    left:50%;
+    width: 33%;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s;
+}
+.menu-btn span:before {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: translateY(-5px);
+}
+.menu-btn span:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: translateY(5px);
+}
+.menu-btn-active span {
+    height:0;
+}
+.menu-btn-active span:before {
+    transform: rotate(45deg);
+}
+.menu-btn-active span:after {
+    transform: rotate(-45deg);
+}
 @media screen and (max-width: 1024px){
     html {
         font-size: 6px;
     }
     .header .nav .logo {
-        width: 50%;
+        width: 100%;
     }
     .header .nav .menu-list {
         display: none;
     }
     .right .social-media {
         display: none;
+    }
+    .burger-menu {
+        display: flex;
     }
 
 }

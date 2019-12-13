@@ -36,6 +36,11 @@
                 </div>
     </div>
     <div class="right">
+        <div class="burger-menu">
+            <div class="menu-btn">
+                <span></span>
+            </div>
+        </div>
         <div class="png-img">
             <img src="./images/3.png" alt="">
         </div>
@@ -58,5 +63,12 @@
 </section>
 <script src="./js/jquery-3.4.1.min.js"></script>
 <script src="./js/jquery.vide.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.burger-menu').on('click', function () {
+            $('.menu-btn').toggleClass('menu-btn-active')
+        })
+    })
+</script>
 </body>
 </html>
