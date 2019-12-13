@@ -164,6 +164,7 @@ a,a:hover {
     font-family: "Roboto condensed",sans-serif;
     letter-spacing: 1rem;
     font-size: 4rem ;
+    height: 10rem;
     color: black;
     width: 100%;
     z-index: 2;
@@ -287,14 +288,26 @@ a,a:hover {
 }
 
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 998px){
+    html {
+        font-size: 6px;
+    }
+    .header .nav .logo {
+        width: 30%;
+    }
+    .header .nav .menu-list {
+        display: none;
+    }
+}
+@media screen and (max-width: 860px)
+{
         html {
         font-size: 6px;
         }
-        .header .nav .logo {
-        width: 30%;
-        }
-        .header .nav .menu-list {
-            display: none;
-        }
+}
+@media screen and (max-width: 375px)
+{
+    html {
+        font-size: 3px;
+    }
 }
