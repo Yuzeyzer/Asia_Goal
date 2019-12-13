@@ -314,12 +314,15 @@ a,a:hover {
     .header .nav .menu-list {
         display: none;
     }
+    .right .social-media {
+        display: none;
+    }
 
 }
 @media screen and (max-width: 860px)
 {
         html {
-        font-size: 7px;
+        font-size: 6px;
         }
     .left .hero-info {
         right: 20%;
@@ -343,6 +346,6 @@ a,a:hover {
 @media screen and (max-width: 375px)
 {
     html {
-        font-size: 6px;
+        font-size: 5px;
     }
 }
